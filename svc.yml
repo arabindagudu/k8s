@@ -5,10 +5,10 @@ metadata:
   labels:
     app: mynginx
 spec:
-  type: nodeport
+  type: Nodeport
   ports:
-    port: 80
-    targetPort: 9001
-    protocol: TCP
-  selector:
-   app: mynginx
+   port: 80
+   nodeport: 90001
+   protocol: TCP
+selector:
+ app: mynginx  
